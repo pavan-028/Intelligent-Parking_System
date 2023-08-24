@@ -24,7 +24,7 @@ H=bwmorph(F,'thin',1);
 H=imerode(H,strel('line',3,90));
 % Selecting all the regions that are of pixel area more than 100.
 final=bwareaopen(H,100);
-% final=bwlabel(final); % Uncomment to make compitable with the previous versions of MATLAB®
+% final=bwlabel(final); % Uncomment to make compitable with the previous versions of MATLABÂ®
 % Two properties 'BoundingBox' and binary 'Image' corresponding to these
 % Bounding boxes are acquired.
 Iprops=regionprops(final,'BoundingBox','Image');
